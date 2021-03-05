@@ -1,0 +1,75 @@
+.installment {
+  margin: 70px 0;
+}
+.installment__content-image {
+  display: flex;
+  justify-content: center;
+}
+.installment__content-image img {
+  width: 240px;
+}
+.installment__content-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.installment__content-title {
+  color: var(--blue);
+  padding-top: 20px;
+}
+.installment__content-text {
+  padding: 20px 0;
+  text-align: justify;
+}
+.installment__content-installment {
+  color: var(--blue);
+  padding: 10px 0;
+}
+.installment__content-installment::before {
+  content: url("../../images/text-icon.png");
+  margin-right: 5px;
+}
+.installment__content-installment b {
+  color: var(--white);
+}
+.installment__content span {
+  color: var(--blue);
+}
+.installment__content-button {
+  background: none;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0.5em var(--blue);
+  color: var(--blue);
+  padding: 10px;
+  font-size: 18px;
+  width: 228px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.installment__content-lastText {
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .installment__content {
+    position: relative;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+  }
+  .installment__content-image {
+    display: block;
+  }
+  .installment__content-image img {
+    width: 450px;
+  }
+  .installment__content-description {
+    text-align: inherit;
+  }
+  .installment__content-button {
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=installmentAccounts.css.map */

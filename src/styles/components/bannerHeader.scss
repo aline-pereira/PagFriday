@@ -1,0 +1,119 @@
+.bannerHeader {
+    &__logo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width:220px
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        img {
+            width: 270px;
+            margin: 0 auto;
+        }
+
+        &-bullets {
+            margin: 30px 0;
+
+            ul {
+                align-items: center;
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    align-items: center;
+                    background: var(--background);
+                    border: 2px solid var(--blue);
+                    border-radius: 8px;
+                    box-shadow: 0 0 0.5em var(--blue);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 120px;
+                    height: 120px;
+                    margin: 0 5px;
+
+                    p {
+                        padding: 10px;
+                        text-align: center;
+                        color: var(--yellow);
+                    }
+
+                    span {
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-phoneImg {
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 450px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .bannerHeader {
+        &::before {
+            content: '';
+            width: 992px;
+            height: 340px;
+            border: 2px solid var(--blue);
+            border-radius: 30px;
+            position: absolute;
+        }
+    
+        &__logo {
+            position: relative;
+            top: -42px;
+            background: var(--background);
+            margin: 0 auto;
+            width: 360px;
+        }
+    
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+    
+        &__box {
+            margin: 0 auto;
+    
+            img {
+                width: 500px;
+                margin: inherit;
+            }
+    
+            &-bullets {
+                margin-top: 70px;
+    
+                ul {   
+                    li {
+                        margin: inherit; 
+                    }
+                }
+            }
+    
+            &-phoneImg {
+                img {
+                    height: 450px;
+                }
+            }
+        }
+    }
+}

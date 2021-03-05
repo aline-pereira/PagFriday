@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BannerHeader } from "./components/bannerHeader";
+import { CdBlack } from "./components/cdBlack";
+import { InstallmentAccounts } from "./components/installmentAccounts";
+
+import "./styles/global.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <section className="container">
+            <div>
+                <BannerHeader />
+            </div>
+            <div>
+                <CdBlack/>
+            </div>
+            <div className="text">
+                <p>
+                    O PagBank tem as melhores ofertas da Black Friday para você. Garanta <br/> muitas vantagens e dinheiro de volta.
+                </p>
+            </div>
+            <div>
+                <InstallmentAccounts/>
+            </div>
+        </section>
+    );
 }
 
 export default App;

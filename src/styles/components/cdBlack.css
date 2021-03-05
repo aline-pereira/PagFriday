@@ -1,0 +1,61 @@
+.cdBlack__content-image {
+  display: flex;
+  justify-content: center;
+}
+.cdBlack__content-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.cdBlack__content-text p {
+  color: var(--white);
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+.cdBlack__content-text b {
+  color: var(--yellow);
+}
+.cdBlack__content-text button {
+  background: var(--yellow);
+  box-shadow: 0 0 0.5em var(--yellow);
+  color: var(--black);
+  padding: 6px 24px;
+  border-radius: 8px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+@media (min-width: 992px) {
+  .cdBlack {
+    border: 2px solid var(--yellow);
+    box-shadow: 0 0 0.5em var(--yellow);
+    border-radius: 20px;
+    margin: 50px 0;
+  }
+  .cdBlack__content {
+    position: relative;
+    padding: 30px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+  }
+  .cdBlack__content::after {
+    content: url("../../images/grafico.png");
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .cdBlack__content-text {
+    display: block;
+  }
+  .cdBlack__content-text p {
+    text-align: inherit;
+  }
+}
+
+/*# sourceMappingURL=cdBlack.css.map */
