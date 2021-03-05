@@ -2,8 +2,7 @@
 
 - A resolução do problema foi feita em React.JS,tecnologia que também está no meu roadmap de estudos.
 - Foram criados componentes de banner e icon principal, banner secundário e descrições do footer.
-- Utilizei uma biblioteca para facilitar o trabalho: 
- - Sass como pré processador css.
+- Utilizei uma biblioteca para facilitar o trabalho, o Sass como pré processador css.
 - Foi utilizado como referência a documentação oficial do Sass (https://sass-lang.com/install) para instalação.
 - Procurei adaptar o layout para versões responsivas para smatphone e tablet
 
